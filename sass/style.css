@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #273746;
+}
+
+#heading {
+  font-size: 120px;
+  text-shadow: 5px 0 white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #D4AC0D;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 414px) {
+  #heading {
+    font-size: 70px;
+    text-align: center;
+  }
+}
+
+p {
+  font-size: 30px;
+  color: #D4AC0D;
+  text-shadow: 2px 0 #ffff;
+}
+
+@media screen and (max-width: 414px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.player1, .player2 {
+  margin: 20px;
+}
+
+.player1 img, .player2 img {
+  width: 100%;
+  height: 20%;
+}
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em 3em;
+  margin: 0 0.3em 0.3em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  color: #D4AC0D;
+  background-color: #273746;
+  border: 2px solid #D4AC0D;
+  margin: 0 auto;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+  button {
+    padding: 0.5em 1em;
+  }
+}
+
+button:hover {
+  color: #ffff;
+  background-color: #F7DC6F;
+}
+/*# sourceMappingURL=style.css.map */

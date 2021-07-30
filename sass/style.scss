@@ -1,0 +1,73 @@
+@import 'mixin';
+@import 'variables';
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: $darkblue;
+}
+#heading
+{
+    font-size: 120px;
+    text-shadow: 5px 0 white;
+    @include feColorMatrix;
+    color:$paracolor;
+    margin-bottom: 5%;
+    @include mobile
+    {
+        font-size:70px;
+        text-align: center;
+    }
+}
+p
+{
+    font-size: 30px;
+    color:$paracolor ;
+    text-shadow: 2px 0 $white;
+    @include mobile
+    {
+        font-size:20px;
+    }
+}
+.container
+{
+    @include feColorMatrix;
+    width:70%;
+    margin:0 auto;
+}
+.player1 ,.player2
+{
+    margin:20px;
+    & img
+    {
+        width:100%;
+        height:20%;
+    }
+}
+
+button{
+
+    @include feColorMatrix;
+    padding: 0.5em 3em;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    transition: all 0.3;
+    color:$paracolor;
+    background-color: $darkblue;
+    border:2px solid $paracolor;
+    margin:0 auto;
+    font-size:25px;
+    cursor: pointer;
+    @include mobile{
+        padding: 0.5em 1em;
+    }
+    &:hover{
+        color:$white;
+        background-color: #F7DC6F;
+    }
+    }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css"/>
+    <title>Ludo game</title>
+</head>
+<body>
+    <h1 id="heading">Just Play</h1>
+    <div class="container">
+    <div class="player1">
+      <p>Player 1</p>
+      <img src="./images/dice5.png" alt="" id="image1">
+    </div>
+    <div class="player2">
+        <p>Player 2</p>
+        <img src="./images/dice1.png" alt="" id="image2">
+    </div>
+    
+</div>
+<button onclick="ludogame()">
+    Cick Me
+</button>  
+    <script>
+        function ludogame()
+        {   const player1=Math.floor(Math.random()* 6)+1;
+            const play1=`./images/dice${player1}.png`;
+            document.getElementById("image1").setAttribute('src',play1);
+            console.log(player1, play1, "info")
+            const player2=Math.floor(Math.random()* 6)+1;
+            const play2=`./images/dice${player2}.png`;
+            document.getElementById("image2").setAttribute('src',play2);
+            if(player1>player2)
+            {
+                document.getElementById("heading").innerHTML="Player 1 won";
+            }
+            else if(player1<player2)
+            {
+                document.getElementById("heading").innerHTML="Player 2 won";
+
+            }
+            else 
+            {
+                document.getElementById("heading").innerHTML="Draw";
+            }
+        }
+    </script>
+</body>
+</html>
